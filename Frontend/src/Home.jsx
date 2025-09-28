@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios'; 
 
 
-const API_BASE_URL = 'https://codegenius-backend-evj8.onrender.com';
+const API_BASE_URL = 'https://codegenius-backend-evj8.onrender.com/';
 
 
 const getButtonStyle = (baseStyle, isCancel = false) => ({
