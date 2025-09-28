@@ -1,16 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import axios from 'axios'; // 1. Import axios
+import axios from 'axios'; 
 
-// 2. Define the base URL for the backend server running on port 4000
+
 const API_BASE_URL = 'http://localhost:4000';
 
-// Helper function for button styles
+
 const getButtonStyle = (baseStyle, isCancel = false) => ({
   ...baseStyle,
   backgroundColor: isCancel ? "#ff4d4f" : "#1890ff",
   color: "white",
-  // Simple hover simulation for inline styles
+ 
   ":hover": {
     opacity: 0.85,
   },
@@ -32,36 +32,36 @@ function Home() {
     const password = e.target.elements[1].value;
 
     try {
-      // --- BACKEND INTEGRATION START: LOGIN (Using Axios) ---
+      // --- BACKEND INTEGRATION START: LOGIN 
       const response = await axios.post(`${API_BASE_URL}/api/login`, {
         username,
         password,
       });
 
-      // Axios wraps the response body in the 'data' property
+     
       const data = response.data; 
 
       if (response.status === 200) {
         localStorage.setItem("isLoggedIn", "true");
-        localStorage.setItem("authToken", data.token); // Store token
-        localStorage.setItem("userId", data.userId); // Store user ID
+        localStorage.setItem("authToken", data.token); 
+        localStorage.setItem("userId", data.userId); 
         setIsLoggedIn(true);
         setShowLogin(false);
-        // Display success message using custom modal if alert() wasn't restricted
+      
         console.log(data.message);
-        navigate("/review"); // Redirect to App.jsx route
+        navigate("/review"); 
       }
-      // --- BACKEND INTEGRATION END: LOGIN ---
+    
       
     } catch (error) {
       console.error("Login API Error:", error);
       
-      // Handle server-side errors (401, 400, 500)
+      
       const message = error.response 
-        ? error.response.data.message // Message from the backend (e.g., 'Invalid credentials.')
+        ? error.response.data.message 
         : "A network error occurred during login. Is the server running on port 4000?";
         
-      // Use console.warn/log instead of alert
+     
       console.warn(message); 
     }
   };
@@ -73,7 +73,7 @@ function Home() {
     const password = e.target.elements[2].value;
 
     try {
-      // --- BACKEND INTEGRATION START: REGISTER (Using Axios) ---
+      // --- BACKEND INTEGRATION 
       const response = await axios.post(`${API_BASE_URL}/api/register`, {
         username,
         email,
@@ -83,25 +83,24 @@ function Home() {
       if (response.status === 201) {
         console.log("Registration successful! Please log in with your new credentials.");
         setShowRegister(false);
-        setShowLogin(true); // Redirects user to the Login modal
+        setShowLogin(true); 
       }
-      // --- BACKEND INTEGRATION END: REGISTER ---
+      // --- BACKEND INTEGRATION 
 
     } catch (error) {
       console.error("Registration API Error:", error);
       
-      // Handle server-side errors (e.g., 409 Conflict)
+    
       const message = error.response 
         ? error.response.data.message 
         : "A network error occurred during registration. Please try again.";
 
-      // Use console.warn/log instead of alert
+     
       console.warn(`Registration failed: ${message}`); 
     }
   };
 
-  // --- Render Sections ---
-
+ 
   const renderNavButtons = () => {
     const navBtnStyle = getButtonStyle(styles.navBtn);
     const logoutBtnStyle = getButtonStyle(styles.navBtn, true);
@@ -193,7 +192,7 @@ function Home() {
       </div>
       <button 
         style={{...getButtonStyle(styles.submitBtn, false), marginTop: '40px', width: '250px'}} 
-        // FIX: The button now correctly shows the Register modal if not logged in.
+       
         onClick={() => isLoggedIn ? navigate("/review") : setShowRegister(true)}
       >
         {isLoggedIn ? "Start Your Review Now" : "Sign Up to Get Started"}
