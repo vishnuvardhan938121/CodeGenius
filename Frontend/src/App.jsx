@@ -27,7 +27,7 @@ function App() {
     }
   }, [navigate]);
 
-  // 🔹 Your Tool State
+  
   const [isLoading, setIsLoading] = useState(false);
 
   const [code, setCode] = useState(`function calculateArea(r) {\n  // Check for non-negative radius\n  if (r < 0) return 0;\n  return Math.PI * r * r;\n}`);
@@ -40,7 +40,7 @@ function App() {
 
     try {
       //backend endpoint
-      const response = await axios.post('http://localhost:4000/ai/get-review', { code });
+      const response = await axios.post('https://codegenius-backend-evj8.onrender.com/ai/get-review', { code });
     
       setReview(response.data);
     } catch (error) {
