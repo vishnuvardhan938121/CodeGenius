@@ -1,13 +1,13 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-// Check for API key
+
 if (!process.env.GOOGLE_GEMINI_KEY) {
     console.error("FATAL ERROR: GOOGLE_GEMINI_KEY is not defined. AI service will likely fail.");
 }
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_KEY);
 
-// Initialize model with full system instruction
+
 const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: `
@@ -82,10 +82,10 @@ async function getCodeReview(code) {
 
         const result = await model.generateContent(prompt);
 
-        // Log raw response for debugging
+      
         console.log("Raw AI result:", JSON.stringify(result, null, 2));
 
-        // Extract text safely from the nested structure
+     
         const text = result?.response?.candidates?.[0]?.content?.parts?.[0]?.text;
 
         if (text) {
@@ -100,5 +100,5 @@ async function getCodeReview(code) {
     }
 }
 
-// Export function
+
 module.exports = { getCodeReview };
