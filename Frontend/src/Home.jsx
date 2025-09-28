@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios'; 
 
 
-const API_BASE_URL = 'http://localhost:4000';
+const API_BASE_URL = 'https://codegenius-backend-evj8.onrender.com';
 
 
 const getButtonStyle = (baseStyle, isCancel = false) => ({
@@ -32,7 +32,7 @@ function Home() {
     const password = e.target.elements[1].value;
 
     try {
-      // --- BACKEND INTEGRATION START: LOGIN 
+      // --- BACKEND INTEGRATION  LOGIN 
       const response = await axios.post(`${API_BASE_URL}/api/login`, {
         username,
         password,
