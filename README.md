@@ -84,7 +84,10 @@ CodeGenius/
           4.Apply suggested fixes for cleaner, bug-free code. 
 
    📸 Screenshots:   
-   <img width="1280" height="598" alt="image" src="https://github.com/user-attachments/assets/148487ae-79f2-47f7-9366-3bbb9c6426c1" />
+   
+
+![CodeGenius Screenshot](https://github.com/vishnuvardhan938121/CodeGenius/blob/master/WhatsApp%20Image%202025-09-29%20at%2012.56.10_c97e1f3e.jpg?raw=true)
+
 
       
 
