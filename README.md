@@ -14,7 +14,9 @@ It allows developers to upload code, get AI-driven reviews, fix errors, and gene
 - 🔐 **Authentication** – Secure login & register functionality.  
 - 🎨 **Modern UI** – Responsive React frontend with animations and clean design.  
 
----
+---        
+
+LIVE LINK:  https://codegenius-frontend-anw7.onrender.com/
 
 ## 🏗️ Tech Stack
 
@@ -81,11 +83,22 @@ CodeGenius/
           1.Register/Login to the the website.
           2.Upload your code snippet.
           3.Get instant AI-powered feedback. 
-          4.Apply suggested fixes for cleaner, bug-free code. 
+          4.Apply suggested fixes for cleaner, bug-free code.    
 
-   📸 Screenshots:   
-   
-![CodeGenius Screenshot](https://raw.githubusercontent.com/vishnuvardhan938121/CodeGenius/master/Home.jpg)
+🛠️ Future Enhancements:  
+            
+         1.User profile with saved code snippets
+
+         2.Dark mode and theme options 
+         3.☁️ Cloud Storage Integration – Save user code directly to cloud platforms like Google Drive or Dropbox.
+         4.📂 Project/Folder Management – Organize code snippets by projects or folders for better workflow.
+   👨‍💻 Author
+
+Jaina Vishnu Vardhan
+LinkedIn:  https://www.linkedin.com/in/vishnu-vardhan-840164264/   
+
+
+
 
 
 
