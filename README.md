@@ -83,7 +83,9 @@ CodeGenius/
           3.Get instant AI-powered feedback. 
           4.Apply suggested fixes for cleaner, bug-free code. 
 
-   📸 Screenshots: 
+   📸 Screenshots:   
+   <img width="1280" height="598" alt="image" src="https://github.com/user-attachments/assets/148487ae-79f2-47f7-9366-3bbb9c6426c1" />
+
       
 
               
