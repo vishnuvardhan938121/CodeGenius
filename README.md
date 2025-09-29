@@ -85,7 +85,8 @@ CodeGenius/
 
    📸 Screenshots:   
    
-![CodeGenius Screenshot](https://raw.githubusercontent.com/vishnuvardhan938121/CodeGenius/07ceec68a9acd4d7ce93502a9860add0bf217669/Home.jpg)
+![CodeGenius Screenshot](https://raw.githubusercontent.com/vishnuvardhan938121/CodeGenius/master/Home.jpg)
+
 
 
 
