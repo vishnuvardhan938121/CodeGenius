@@ -85,7 +85,8 @@ CodeGenius/
 
    📸 Screenshots:   
    
-![CodeGenius Screenshot](https://raw.githubusercontent.com/vishnuvardhan938121/CodeGenius/master/WhatsApp%20Image%202025-09-29%20at%2012.56.10_c97e1f3e.jpg)
+![CodeGenius Screenshot](https://raw.githubusercontent.com/vishnuvardhan938121/CodeGenius/d859572495573cb46f318a1094d379d62df98b43/WhatsApp%20Image%202025-09-29%20at%2012.56.10_c97e1f3e.jpg)
+
 
 !  
 
