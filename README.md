@@ -92,10 +92,15 @@ CodeGenius/
          2.Dark mode and theme options 
          3.☁️ Cloud Storage Integration – Save user code directly to cloud platforms like Google Drive or Dropbox.
          4.📂 Project/Folder Management – Organize code snippets by projects or folders for better workflow.
-   👨‍💻 Author
 
-Jaina Vishnu Vardhan
-LinkedIn:  https://www.linkedin.com/in/vishnu-vardhan-840164264/   
+   👨‍💻 Author
+       Jaina Vishnu Vardhan
+
+LinkedIn:  https://www.linkedin.com/in/vishnu-vardhan-840164264/       
+
+📜 License
+
+This project is licensed under the MIT License.
 
 
 
